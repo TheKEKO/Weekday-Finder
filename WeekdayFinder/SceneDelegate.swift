@@ -1,6 +1,6 @@
 //
 //  SceneDelegate.swift
-//  Weekday Finder
+//  WeekdayFinder
 //
 //  Created by Aleksandr F. on 14.06.2022.
 //
