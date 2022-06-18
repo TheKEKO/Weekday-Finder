@@ -8,6 +8,7 @@
 import UIKit
 
 class ViewController: UIViewController {
+    
     @IBOutlet weak var dateTF: UITextField!
     @IBOutlet weak var monthTF: UITextField!
     @IBOutlet weak var yearTF: UITextField!
@@ -22,9 +23,13 @@ class ViewController: UIViewController {
         dateComponents.year = Int(yearTF.text!)
         
         let dateFormatter = DateFormatter()
+        dateFormatter.dateFormat = "EEEE"
         
+        let date = calendar.date(from: dateComponents)
         
+        let weekday = dateFormatter.string(from: date!)
         
+        resultLabel.text = weekday
         
     }
 }
